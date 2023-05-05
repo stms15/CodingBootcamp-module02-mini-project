@@ -26,14 +26,20 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--background-highlight);
+    /* background-color: var(--background-highlight); */
+    /* Linear gradient background */
+    background-image: linear-gradient(rgba(30, 32, 33, 1) 0%, rgba(30, 32, 33, 0.6) 100%);
     color: white;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
 }
 
 header h1 {
-    background-color: var(--background-highlight);
+    /* background-color: var(--background-highlight); */
     color: var(--highlight);
     font-size: 350%;;
+    text-align: center;
 }
 
 /* Main classes */
@@ -43,7 +49,8 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2%;;
+    margin: 3%;
+    margin-top: 5%;
 }
 
 section {
@@ -51,24 +58,42 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 30%;
-    background-color: var(--background-highlight);
+    align-items: center;
+    width: 32%;
+    /* background-color: var(--background-highlight); */
     color: var(--highlight);
     padding: 20px;
+    border: 2px dashed white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    /* Linear gradient background */
+    background-image: linear-gradient(rgba(30, 32, 33, 1) 0%, rgba(30, 32, 33, 0.4) 100%);
 }
 
 section h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* color: var(--highlight); */
     font-size: 200%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: var(--background-highlight);
+    margin: -40px;
+    width: 90%;
+}
+
+.card {
+    margin-top: 35px;
 }
 
 .code-snippet {
     background-color: var(--highlight);
+    /* Linear gradient background */
+    /* background-image: linear-gradient(rgba(51, 193, 232, 0.7)0%, rgba(51, 193, 232, 1) 100%, rgba(51, 193, 232, 0.9) 100%); */
     color: white;
-    padding: 15px;;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Footer classes */

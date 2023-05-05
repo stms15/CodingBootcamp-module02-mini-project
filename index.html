@@ -11,54 +11,87 @@
     <body>
         <header>
             <h1>CSS Snippet Cheatsheet</h1>
+
+            <p>Ever have trouble recalling the exact syntax for your favourite CSS code? 
+                Give it a permanent home and add it to this page! Select any snippet below and 
+                it'll automatically select all of the code for you to copy.</p>
         </header>
 
         <main>
             <section>
-                <h2>Flex Box 1</h2>
-                <p>description</p>
+                <h2>Flexbox row</h2>
+                <p>Use these three properties to create a Flexbox row layout.</p>
                 <div class="code-snippet">
-                    <p>Box with code 1 snipet. This is text to test the CSS. Hopefully this text wraps, is left-justified, and casues the header to be center.</p>
+                    <p>.row{ <br/>
+                            display: flex; <br/>
+                            flex-direction: row; <br/>
+                            flex-wrap: wrap; <br/>
+                        }
+                    </p>
                 </div>
             </section>
 
             <section>
-                <h2>Flex Box 2</h2>
-                <p>description</p>
+                <h2>Flexbox Column</h2>
+                <p>Use this to create a Flexbox column layout.</p>
                 <div class="code-snippet">
-                    <p>Box with code 2 snipet</p>
+                    <p>.column{ <br/>
+                            display: flex; <br/>
+                            flex-direction: column; <br/>
+                        }
+                    </p>
                 </div>
             </section>
 
             <section>
-                <h2>Flex Box 3</h2>
-                <p>description</p>
+                <h2>CSS Grid Layout</h2>
+                <p>Build a 12-column layout using CSS Grid.</p>
                 <div class="code-snippet">
-                    <p>Box with code 3 snipet</p>
+                    <p>.grid{ <br/>
+                            display: grid; <br/>
+                            width: 100%; <br/>
+                            grid-template-columns: repeat(12, 1fr); <br/>
+                        }
+                    </p>
                 </div>
             </section>
 
             <section>
-                <h2>Flex Box 4</h2>
-                <p>description</p>
+                <h2>Linear Gradients</h2>
+                <p>This will create a background linear gradient from top to bottom.</p>
                 <div class="code-snippet">
-                    <p>Box with code 4 snipet</p>
+                    <p>.linear-gradient-background{ <br/>
+                            background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%); <br/>
+                        }
+                    </p>
                 </div>
             </section>
 
             <section>
-                <h2>Flex Box 5</h2>
-                <p>description</p>
+                <h2>Box Transition Glow</h2>
+                <p>Use transition and box shadows to glow on hover.</p>
                 <div class="code-snippet">
-                    <p>Box with code 5 snipet</p>
+                    <p>.code-card .card-header{ <br/>
+                        border-radius: 8px; <br/>
+                        transition: all 0.5s ease-in-out; <br/>
+                        } <br/>
+                        <br/>
+                        .code-card:hover, .code-card:hover .card-header { <br/>
+                            box-shadow: inset 8px 8px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1); <br/>
+                        }
+                    </p>
                 </div>
             </section>
 
             <section>
-                <h2>Flex Box 6</h2>
-                <p>description</p>
+                <h2>Overlay Card with Title</h2>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
                 <div class="code-snippet">
-                    <p>Box with code 6 snipet</p>
+                    <p>.card-header{ <br/>
+                            position: relative; <br/>
+                            margin-top: -20px; <br/>
+                        }
+                    </p>
                 </div>
             </section>
         </main>

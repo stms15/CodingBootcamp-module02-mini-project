@@ -10,9 +10,9 @@
 }
 
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     background-color: #393d40;
 }
 
@@ -26,7 +26,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--background-highlight); */
     /* Linear gradient background */
     background-image: linear-gradient(rgba(30, 32, 33, 1) 0%, rgba(30, 32, 33, 0.6) 100%);
     color: white;
@@ -60,7 +59,6 @@ section {
     justify-content: flex-start;
     align-items: center;
     width: 32%;
-    /* background-color: var(--background-highlight); */
     color: var(--highlight);
     padding: 20px;
     border: 2px dashed white;
@@ -85,6 +83,7 @@ section h2{
 
 .card {
     margin-top: 35px;
+    width: 100%;
 }
 
 .code-snippet {
@@ -103,4 +102,20 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 175%;
+}
+
+
+/* -------------------------------------- */
+
+@media screen and (max-width: 992px){
+    section{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        width: 98%;
+        
+    }
 }
